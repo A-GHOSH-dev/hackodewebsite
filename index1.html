@@ -5,20 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <title>border animation</title>
+
+
+
+
     
+
+
+
+    
+
+    <title>HackX</title>
+
     <style>
-        /*gradient: https://www.gradientmagic.com/collection/rainbowstandard*/
-@import url("https://fonts.googleapis.com/css?family=Lato:300");
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
-
-
-
-
-
-
-
 body {
   margin: 30px;
   
@@ -169,17 +168,6 @@ body {
 
 
 
-
-body {
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /*height: 100vh;
-  background: #222;*/
-  background: black;
-}
-
 .gradient-border {
   --border-width: 3px;
 
@@ -238,65 +226,22 @@ body {
   }
 }
 
-p {
-            text-align: center;
-            font-size: 100%;
 
-            margin-top: 0px;
-            font-weight: bolder;
-            font-family: 'Fredoka One', cursive;
-          }
-      .name{
-        width: 50vw;
 
-        height: 40vh;
 
-      }
-      .hackode{
-        left: 5vmin;
-        top: 20vmin;
-        position: absolute;
 
-      }
-      .register{
-        
 
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 10%;
-  height: 5%;
-  margin-left: 18%;
-  margin-top: 2%;
 
-  font-family: Lato, sans-serif;
-  font-size: 1.3rem;
-  /*text-transform: uppercase;
-  color: white;
- /* background: #222;
-  border-radius: var(--border-width);*/
-  background: black;
-  border-radius: 30%;
-      }
-      
-      
-      #reg{
-        text-decoration: none;
-        color: white;
-      }
 
-    </style>
+
+
+</style>
+  
+
+    
 </head>
 <body>
-
-
-
-
-
-
-
-  <div class="nav">
+    <div class="nav">
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
           <div class="nav-title">
@@ -322,85 +267,50 @@ p {
           <a href="">Contacts</a>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="gradient-border">
-        <p id="demo"></p>
-    </div>
-    <div class="hackode">
-      <img src="HACK 1.svg" alt="Hackode" class="name">
-      <!--<button class="register">
-        <a href="#" id="reg">Register Now</a>
-      </button>-->
-    </div>
     
+
+
+      
+  
+ 
+      
+  <section class="text-gray-600 body-font">
+  <div class="container px-2 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/2 mb-10 px-1">
+        <div class="rounded-lg h-100 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full*1/2 w-full px-10" src="HACK 1.svg">
+          
+          <img alt="content" class="object-cover object-left h-full/2 w-full py-2 px-24" src="Work.Inspire.Empower.svg">
+          <button class="flex mx-auto mt-6 text-white bg-black-500 py-2 px-5 focus:outline-none hover:bg-white-500 rounded-3xl">Register Now</button>
+        </div>
+        
+      </div>
+      <div class="sm:w-1/2 mb-10 px-1">
+        <div class="rounded-lg h-100 overflow-hidden">
+          <div class="gradient-border">
+        <p id="demo"></p>
+          </div>
+        </div>
+       
+        
+       
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
-
-
-
-
-<script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-  </script>
-
-
-
-
-
-
-
-
-
-<!--<script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("May 17, 2021 12:00:00").getTime();
-    
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-    
-      // Get today's date and time
-      var now = new Date().getTime();
-        
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-        
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-      // Output the result in an element with id="demo"
-      //document.getElementById("demo").innerHTML = days + " d : " + hours + " h : "
-     // + minutes + " m : " + seconds + " s";
-      document.getElementById("demo").innerHTML =  hours + " : " + minutes + " : " + seconds + "<br>"  + "hours : "
-      + " minutes : " +  " seconds " + "<br>" + "<br>" + days + "<br>" + "days to go"
-      
-        
-      // If the count down is over, write some text 
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-      }
-    }, 1000);
-    </script>-->
-    
 </html>
